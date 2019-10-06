@@ -1,0 +1,262 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Anton|Gugi|Lato|Roboto|Sofia&display=swap');
+
+/* variables */
+:root{
+    --light-gray: #2b3032a1;
+    --primary-color: #45ccb8;
+    --border: #2b303218;
+    --text-color: #ff686b;
+    --roboto: "Roboto", sans-serif;
+    --gugi: "Gugi", cursive;
+    --sofia: "Sofia", cursive;
+}
+
+.primary-color{
+    color: var(--primary-color);
+    
+}
+.bg-primary-color{
+    background-color: var(--primary-color)!important;
+}
+.text-color{
+    color: var(--text-color);
+}
+.font-roboto{
+    font-family: var(--roboto);
+}
+.lightblue{
+    color: lightblue;
+}
+
+/* header */
+header{
+    background-color: var(--primary-color);
+    font-family: var(--roboto);
+}
+header .site-title{
+    font-family: var(--gugi);
+}
+.container .dropdown-toggle, 
+.container .dropdown-item{
+    font-size: 0.7em;
+}
+.header-links a{
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* navigation menue */
+.navbar-nav{
+    padding:  0.09em 0em;
+}
+.navbar-nav .nav-link{
+    font-size: 0.9em;
+    color: var(--light-gray)!important;
+}
+.nav-link .nav-item .nav-link{
+    padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon{
+    margin-right: 6.5rem !important;
+}
+
+/* slider One */
+.site-slider{
+    position: relative;
+}
+.position-top{
+    position: absolute;
+    top: 45%;
+}
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next
+{
+    background-color: var(--primary-color);
+    padding: 1rem 1.5rem;
+    border-radius: 10rem;
+    color: #fff;
+    margin: 0 1rem;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next{
+    opacity: 1;
+}
+
+.right-0{
+    right: 0;
+}
+
+/* slick dots */
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+}
+.slick-dots li{
+    margin: 0 0.6rem;
+}
+.slick-dots button{
+    display: block;
+    width: 5rem;
+    height: 0.5rem ;
+    padding: 0;
+    border: none;
+    background-color: #fff;
+    text-indent: -9999px;
+    border-radius: 100%;
+}
+
+.slick-dots li .slick-active button{
+    transform: scale(2.5);
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0, 205);
+}
+
+/* second sliders */
+.site-slider-two{
+    position: relative;
+    height: 30%;
+}
+.site-slider-two .product{
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+}
+.site-slider-two .product img{
+    width: 90%;
+    margin: auto;
+}
+.site-btn .btn-span{
+    padding: 0.8rem 1.9rem;
+    border-radius: 4rem;
+    border: 1px solid var(--border);
+    background-color: #fff;
+    color: var(--light-gray);
+}
+.slider-two .slick-track .product:hover span{
+    background-color: var(--primary-color);
+}
+
+/* About Page */
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+/* Banner Nav */
+.top-banner {
+    background-color: #eeeeee;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    line-height: 1, 83;
+    letter-spacing: 2.4px;
+    padding: 20px 0;
+}
+
+.top-banner>div>div>div:nth-child(2) {
+    text-align: center;
+}
+
+.top-banner>div>div>div:last-child {
+    text-align: right;
+}
+
+.top-banner {
+    padding: 10px 0;
+}
+
+
+/* Main Nav */
+.navbar-brand {
+    color: #000000;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.nav-align {
+    justify-content: flex-end;
+}
+
+.nav-align>div>a {
+    padding-left: 25px !important;
+    color: #666666;
+}
+
+/* End Main Nav */
+
+/* Hero */
+.jumbotron {
+    background-color: #0e0902 !important;
+    padding-top: 120px;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+/* End Hero */
+
+/* Who we are */
+.who-we-are {
+    padding: 50px 0;
+}
+
+.line {
+    width: 50px;
+    height: 2px;
+    background-color: #ac907f;
+}
+
+/* End Who we are */
+
+/* Meet our Team */
+.meet-team {
+    padding: 50px 0;
+}
+
+.card,
+.list-group,
+.list-group-flush,
+.list-group-item {
+    border: none !important;
+}
+
+.list-group-item {
+    margin: -5px;
+}
+
+i {
+    padding: 5px;
+}
+
+/* End Meet our Team */
+/* What We do */
+.wwd-h {
+    margin-top: 20px;
+}
+
+/* End of what we do  */
+
+/* Media Query */
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    /* selecting all elements */
+    .top-banner>div>div>div {
+        text-align: center !important;
+    }
+
+    .col {
+        display: block;
+    }
+
+    .wwd-h {
+        margin-top: 20px;
+    }
+}
