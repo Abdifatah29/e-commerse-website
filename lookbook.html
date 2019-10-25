@@ -7,8 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online Store</title>
     <!-- Bootsrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./bootstrap-4.3.1-dist/css/bootstrap.css" media="all" type="text/css" rel="stylesheet">
     <!-- FontAwesome CDN -->
     <script src="https://kit.fontawesome.com/23412c6a8d.js"></script>
 
@@ -21,7 +20,20 @@
     <!-- custom style sheet -->
     <!-- lookbook link -->
     <link rel="stylesheet" href="./css/lookbook.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        div img{
+             width: 100%;
+             transition: transform .1s;
+        }
+        div img:hover {
+        transform: scale(1.1);
+        }
+    </style>
 </head>
 
 <body>
@@ -89,16 +101,6 @@
 
                     </ul>
                 </div>
-                <div class="navbar-nav">
-                    <li class="nav-item border rounded-circle mx-2 search-icon">
-                        <i class="fas fa-search p-2 "></i>
-                    </li>
-                    <li class="nav-item border rounded-circle mx-2 search-icon">
-                        <i class="fas fa-shopping-basket p-2 "></i>
-                    </li>
-                </div>
-            </nav>
-        </div>
     </header>
     <!-- End of header -->
        <!-- Hero -->
@@ -109,66 +111,81 @@
        </div>
        <!-- heading gallery -->
          <div class="col-lg-12">
-             <h3 class="text-center">GALLARY</h3>
              <hr class="line mb-4">
          </div>
        <!-- gallary images -->
        <div class="row text-center">
            <!-- image one -->
-           <div class="col-lg-3 col-md-6">
+           <!-- <div class="col-lg-3 col-md-6">
                <div class="card">
-                   <img class="card-img-top"
-                       src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                   <img class="card-img-top course-image  img-fluid"
+                       src="./images/leather-recliner-chairs-comfort.jpg"
                        alt="Card image cap">
                </div>
                    <div class="card-body">
                        <ul class="list-group list-group-flush">
                            <li class="list-group-item">
-                               <h5>Name Surname</h5>
                            </li>
                        </ul>
                    </div>
-           </div>
+           </div> -->
            <!-- image one -->
         
             <div class="col-lg-3 col-md-6">
                 <div class="card">
-                    <img class="card-img-top"
-                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                        alt="Card image cap">
+                    <!-- <img class="card-img-top"
+                        src="images/luxury-furniture-stores-room-store-bedroom.jpg"
+                         width="300" height="300"
+                        alt="Card image cap"> -->
+                        <a href="images/luxury-furniture-stores-room-store-bedroom.jpg" 
+                        rel="prettyPhoto">
+                        <img src="images/luxury-furniture-stores-room-store-bedroom.jpg" alt="luxury-furniture"
+                         width="300" height="300"
+                                style="width:100%"></a>
                 </div>
                 <div class="card-body">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <h5>Name Surname</h5>
                         </li>
                     </ul>
                 </div>
             </div>
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                     <a href="images/bedroom.jpg" rel="prettyPhoto">
+                         <img src="images/bedroom.jpg" alt="bedroom"
+                             width="300" height="300" style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
                          </li>
                      </ul>
                  </div>
              </div>
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                    <a href="images/traditional-japanese-furniture.jpg" rel="prettyPhoto">
+                        <img src="images/traditional-japanese-furniture.jpg" alt="japanese-furniture" width="300"
+                            height="300"
+                            style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
+                         </li>
+                     </ul>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6">
+                 <div class="card">
+                     <a href="images/gruba-furniture.jpg" rel="prettyPhoto">
+                         <img src="images/gruba-furniture.jpg" alt="japanese-furniture" width="300"
+                             height="300" style="width:100%"></a>
+                 </div>
+                 <div class="card-body">
+                     <ul class="list-group list-group-flush">
+                         <li class="list-group-item">
                          </li>
                      </ul>
                  </div>
@@ -180,14 +197,13 @@
              <!-- image one -->
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                      <a href="images/Freestanding-Bath.jpg" rel="prettyPhoto">
+                          <img src="images/Freestanding-Bath.jpg" alt="Freestanding-bath" width="300"
+                              height="300" style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
                          </li>
                      </ul>
                  </div>
@@ -196,112 +212,51 @@
 
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                    <a href="images/images.jpg" rel="prettyPhoto">
+                        <img src="images/images.jpg" alt="Freestanding-bath" width="300" height="300"
+                            style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
                          </li>
                      </ul>
                  </div>
              </div>
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                  <a href="images/4aef9fc5cf1e78f869d962ea975bba72.jpg" rel="prettyPhoto">
+                      <img src="images/4aef9fc5cf1e78f869d962ea975bba72.jpg" alt="Freestanding-bath" width="300"
+                          height="300"
+                          style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
                          </li>
                      </ul>
                  </div>
              </div>
              <div class="col-lg-3 col-md-6">
                  <div class="card">
-                     <img class="card-img-top"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         alt="Card image cap">
+                        <a href="images/happy-friends.jpg" rel="prettyPhoto">
+                            <img src="images/happy-friends.jpg" alt="Freestanding-bath" width="300"
+                                height="300" style="width:100%"></a>
                  </div>
                  <div class="card-body">
                      <ul class="list-group list-group-flush">
                          <li class="list-group-item">
-                             <h5>Name Surname</h5>
                          </li>
                      </ul>
                  </div>
              </div>
          </div>
 
-          <!-- gallary images -->
-          <div class="row text-center">
-              <!-- image one -->
-              <div class="col-lg-3 col-md-6">
-                  <div class="card">
-                      <img class="card-img-top"
-                          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                          alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                              <h5>Name Surname</h5>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- image one -->
-
-              <div class="col-lg-3 col-md-6">
-                  <div class="card">
-                      <img class="card-img-top"
-                          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                          alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                              <h5>Name Surname</h5>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                  <div class="card">
-                      <img class="card-img-top"
-                          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                          alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                              <h5>Name Surname</h5>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-6">
-                  <div class="card">
-                      <img class="card-img-top"
-                          src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22286%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20286%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16caec78c9d%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16caec78c9d%22%3E%3Crect%20width%3D%22286%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%2299.1171875%22%20y%3D%2296.3%22%3EImage%20cap%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                          alt="Card image cap">
-                  </div>
-                  <div class="card-body">
-                      <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                              <h5>Name Surname</h5>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
+         <!-- testone  -->
+         c
+         <!-- test one -->
             <!-- Footer -->
-            <footer class="page-footer font-small stylish-color-dark pt-4">
+            <footer class="page-footer font-small stylish-color-dark pt-4 mybottmfooter">
 
                 <!-- Footer Links -->
                 <div class="container text-center text-md-left">
@@ -379,21 +334,6 @@
                 </div>
                 <!-- Footer Links -->
 
-                <hr>
-
-                <!-- Call to action -->
-                <ul class="list-unstyled list-inline text-center py-2">
-                    <li class="list-inline-item">
-                        <h5 class="mb-1">Register for free</h5>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-                    </li>
-                </ul>
-                <!-- Call to action -->
-
-                <hr>
-
                 <!-- Social buttons -->
                 <ul class="list-unstyled list-inline text-center">
                     <li class="list-inline-item">
@@ -425,8 +365,8 @@
                 <!-- Social buttons -->
 
                 <!-- Copyright -->
-                <div class="footer-copyright text-center py-3">© 2019 Copyright:
-                    <a href="#"> NATE B</a>
+                <div class="footer-copyright text-center py-3" style="background: #45ccb8;">© 2019 Copyright:
+                    <a href="#" class="text-white"> NATE B</a>
                 </div>
                 <!-- Copyright -->
 
@@ -448,4 +388,5 @@
             </script>
             <!-- main js -->
             <script src="./js/main.js"></script>
+            <script src="./js/shop.js"></script>
 </body>
